@@ -6,18 +6,35 @@ from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import FAISS
 
 
-def initialize_sales_bot(vector_store_dir: str="real_estates_sale"):
-    db = FAISS.load_local(vector_store_dir, OpenAIEmbeddings())
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
-    
-    global SALES_BOT    
-    SALES_BOT = RetrievalQA.from_chain_type(llm,
-                                           retriever=db.as_retriever(search_type="similarity_score_threshold",
-                                                                     search_kwargs={"score_threshold": 0.8}))
+def initialize_sales_bot(vector_store_dir: str = "real_estates_sale"):
+    db = FAISS.load_local(
+        vector_store_dir,
+        OpenAIEmbeddings(
+            api_key="sk-EMA9xdeuT3krvtvE558e351d65704aB9A28b350b5dC6A78b",
+            base_url="https://api.xiaoai.plus/v1",
+        ),
+        allow_dangerous_deserialization=True,
+    )
+    llm = ChatOpenAI(
+        model_name="gpt-3.5-turbo",
+        temperature=0,
+        api_key="sk-EMA9xdeuT3krvtvE558e351d65704aB9A28b350b5dC6A78b",
+        base_url="https://api.xiaoai.plus/v1",
+    )
+
+    global SALES_BOT
+    SALES_BOT = RetrievalQA.from_chain_type(
+        llm,
+        retriever=db.as_retriever(
+            search_type="similarity_score_threshold",
+            search_kwargs={"score_threshold": 0.8},
+        ),
+    )
     # 返回向量数据库的检索结果
     SALES_BOT.return_source_documents = True
 
     return SALES_BOT
+
 
 def sales_chat(message, history):
     print(f"[message]{message}")
@@ -35,7 +52,7 @@ def sales_chat(message, history):
     # 否则输出套路话术
     else:
         return "这个问题我要问问领导"
-    
+
 
 def launch_gradio():
     demo = gr.ChatInterface(
@@ -46,7 +63,8 @@ def launch_gradio():
         chatbot=gr.Chatbot(height=600),
     )
 
-    demo.launch(share=True, server_name="0.0.0.0")
+    demo.launch(share=True, server_name="localhost")
+
 
 if __name__ == "__main__":
     # 初始化房产销售机器人
