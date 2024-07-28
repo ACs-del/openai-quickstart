@@ -51,13 +51,13 @@ def sales_chat(message, history):
         return ans["result"]
     # 否则输出套路话术
     else:
-        return "这个问题我要问问领导"
+        return "这个问题我要问问老板"
 
 
 def launch_gradio():
     demo = gr.ChatInterface(
         fn=sales_chat,
-        title="房产销售",
+        title="汽车销售",
         # retry_btn=None,
         # undo_btn=None,
         chatbot=gr.Chatbot(height=600),

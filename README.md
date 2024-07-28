@@ -129,6 +129,8 @@ print(chain.invoke("高山流水是什么意思?"))
 
 day3.实战sales chatbot 自行生成新产品知识库 
 
-
+![sales](D:\openai-quickstart\sales.png)
 
 使用向量数据库进行检索回答，如果向量数据库检索不到问题答案时，能够通过一个prompt来回答这个问题 问答示例 
+
+![robot](D:\openai-quickstart\sales_robot.png)
