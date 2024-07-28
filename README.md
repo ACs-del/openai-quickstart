@@ -1,18 +1,18 @@
 Day2 作业： 1.GPT-4V的使用 对输出进行渲染成Markdown格式
 
- [![Alt text](D:\CodeRepo\openai-quickstart\img1.png)](https://github.com/BennyX1e/openai-quickstart-homework/blob/master/image-4.png) 
+ [![Alt text](D:\CodeRepo\openai-quickstart\img1.png)](https://github.com/ACs-del/openai-quickstart/blob/main/img1.png) 
 
-运行结果： [![Alt text](D:\CodeRepo\openai-quickstart\gpt4v.png)](https://github.com/BennyX1e/openai-quickstart-homework/blob/master/image-5.png)
+运行结果： [![Alt text](D:\CodeRepo\openai-quickstart\gpt4v.png)]([openai-quickstart/gpt4v.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/gpt4v.png))
 
 2.ai translator的使用 
 
 输出中文
 
-结果： [![Alt text](D:\CodeRepo\openai-quickstart\img-cn.png)](https://github.com/BennyX1e/openai-quickstart-homework/blob/master/image-1.png) 
+结果： [![Alt text](D:\CodeRepo\openai-quickstart\img-cn.png)]([openai-quickstart/img-cn.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/img-cn.png)) 
 
 输出日语 
 
-结果： ![Alt text](D:\CodeRepo\openai-quickstart\img2.png)
+结果： [![Alt text](D:\CodeRepo\openai-quickstart\img2.png)]([openai-quickstart/img-cn.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/img2.png)) 
 
 3.扩展langchain chains
 
