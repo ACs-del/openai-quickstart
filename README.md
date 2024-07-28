@@ -1,18 +1,18 @@
 Day2 作业： 1.GPT-4V的使用 对输出进行渲染成Markdown格式
 
- [![Alt text](D:\CodeRepo\openai-quickstart\img1.png)](https://github.com/ACs-del/openai-quickstart/blob/main/img1.png) 
+ ![Alt text](img1.png)
 
-运行结果： [![Alt text](D:\CodeRepo\openai-quickstart\gpt4v.png)]([openai-quickstart/gpt4v.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/gpt4v.png))
+运行结果： ![Alt text](gpt4v.png)
 
 2.ai translator的使用 
 
 输出中文
 
-结果： [![Alt text](D:\CodeRepo\openai-quickstart\img-cn.png)]([openai-quickstart/img-cn.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/img-cn.png)) 
+结果： ![Alt text](img-cn.png)
 
 输出日语 
 
-结果： [![Alt text](D:\CodeRepo\openai-quickstart\img2.png)]([openai-quickstart/img-cn.png at main · ACs-del/openai-quickstart (github.com)](https://github.com/ACs-del/openai-quickstart/blob/main/img2.png)) 
+结果： ![Alt text](img2.png)
 
 3.扩展langchain chains
 
@@ -123,14 +123,14 @@ print(chain.invoke("高山流水是什么意思?"))
 
 结果:
 
-![](D:\CodeRepo\openai-quickstart\img3.png)
+![result](img3.png)
 
 
 
 day3.实战sales chatbot 自行生成新产品知识库 
 
-![sales](D:\openai-quickstart\sales.png)
+![sales](sales.png)
 
 使用向量数据库进行检索回答，如果向量数据库检索不到问题答案时，能够通过一个prompt来回答这个问题 问答示例 
 
-![robot](D:\openai-quickstart\sales_robot.png)
+![robot](sales_robot.png)
